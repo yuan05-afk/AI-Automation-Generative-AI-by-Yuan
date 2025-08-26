@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<section class="chat-window" aria-label="AI chat assistant">
+    <div class="chat-header">
+        <button class="close" aria-label="Close chat window">×</button>
+    </div>
+    <div class="chat" aria-live="polite" aria-atomic="false">
+        <div class="message model">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="bubble">
+                <p>Hi, how can I help you?</p>
+            </div>
+        </div>
+    </div>
+    <form class="input-area" role="search" aria-label="Send a message">
+        <textarea placeholder="Ask me anything..." name="prompt" autocomplete="off" aria-label="Chat input"></textarea>
+        <button type="submit" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </form>
+</section>
+
+    <script src="main.js"></script>
+</body>
+</html>
